@@ -8,12 +8,8 @@ function agregar(valor) {
     }
 }
 
-function calcular() {
-    try {
-        pantalla.innerHTML = eval(pantalla.innerHTML);
-    } catch {
-        pantalla.innerHTML = "Error";
-    }
+function limpiar() {
+    pantalla.innerHTML = '0';
 }
 
 function borrar() {
@@ -24,6 +20,10 @@ function borrar() {
     }
 }
 
-function limpiar() {
-    pantalla.innerHTML = '0';
+function calcular() {
+    try {
+        pantalla.innerHTML = eval(pantalla.innerHTML);
+    } catch {
+        pantalla.innerHTML = "Error";
+    }
 }
